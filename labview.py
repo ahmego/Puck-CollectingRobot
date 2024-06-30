@@ -41,7 +41,4 @@ def HAND_COUNTER():
             if cv2.waitKey(1)==ord("q"):
                 cap.release()
                 cv2.destroyAllWindows()
-    return total
-
-num = HAND_COUNTER()
-print(num)
+                return total
