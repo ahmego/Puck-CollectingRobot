@@ -37,8 +37,11 @@ def HAND_COUNTER():
                     else:
                         fingers.append(0)
                 total=fingers.count(1)
-                return total
             cv2.imshow("frame",frame)
             if cv2.waitKey(1)==ord("q"):
                 cap.release()
                 cv2.destroyAllWindows()
+    return total
+
+num = HAND_COUNTER()
+print(num)
